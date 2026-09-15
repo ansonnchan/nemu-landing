@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nemu is a quiet, privacy-first activity journal for macOS that turns app time into a gentle daily reflection."
+    />
+    <meta name="theme-color" content="#f6f0e7" />
+    <meta property="og:title" content="nemu — a quieter way to remember your day" />
+    <meta
+      property="og:description"
+      content="A private macOS activity journal for understanding where your day went."
+    />
+    <meta property="og:image" content="/public/assets/nemu-hero.png" />
+    <title>nemu — a quieter way to remember your day</title>
+    <link rel="icon" href="/public/assets/leaf.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Nemu home">
+        <span>nemu</span>
+        <img src="/public/assets/leaf.svg" alt="" />
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#why">Why nemu</a>
+        <a href="#demo">Demo</a>
+        <a href="#next">What's next</a>
+      </nav>
+      <a class="tiny-button" href="https://github.com/ansonnchan/nemu" target="_blank" rel="noreferrer">
+        GitHub <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> macOS · private by nature</p>
+          <h1>A quieter way to<br /><em>remember your day.</em></h1>
+          <p class="hero-description">
+            Nemu gently records which apps held your attention, then turns the day into a warm,
+            readable reflection—without screenshots, keystrokes, URLs, or content.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#demo">Watch the demo <span>↓</span></a>
+            <a
+              class="text-link"
+              href="https://d1z5giweildfo4.cloudfront.net"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open live dashboard <span>↗</span>
+            </a>
+          </div>
+          <p class="handwritten">small moments become a day worth remembering.</p>
+        </div>
+        <div class="hero-art" role="img" aria-label="A cozy illustrated workspace at sunset"></div>
+      </section>
+
+      <section class="intro" id="why">
+        <div class="section-note">
+          <span>01</span>
+          <p>made for reflection,<br />not surveillance.</p>
+        </div>
+        <div class="intro-copy">
+          <p class="kicker">Your time, made gentle.</p>
+          <h2>See where the day went.<br />Keep the details yours.</h2>
+          <p>
+            Nemu lives quietly in your Mac menu bar. It remembers foreground app sessions and
+            idle time, then presents them as a calm daily journal instead of another productivity
+            scorecard.
+          </p>
+        </div>
+      </section>
+
+      <section class="features" aria-label="Nemu features">
+        <article class="feature-card peach">
+          <span class="feature-icon" aria-hidden="true">◷</span>
+          <h3>A faithful timeline</h3>
+          <p>Brief switches stay visible, idle time begins at your last input, and sleep is left out.</p>
+          <small>just the shape of your day</small>
+        </article>
+        <article class="feature-card sage">
+          <span class="feature-icon" aria-hidden="true">⌁</span>
+          <h3>Only the essentials</h3>
+          <p>App identity and timing—never screenshots, messages, page titles, URLs, or keystrokes.</p>
+          <small>quietly privacy-first</small>
+        </article>
+        <article class="feature-card cream">
+          <span class="feature-icon" aria-hidden="true">☁</span>
+          <h3>Yours across the day</h3>
+          <p>A durable local journal syncs to your paired dashboard and keeps working through outages.</p>
+          <small>soft on the surface, sturdy underneath</small>
+        </article>
+      </section>
+
+      <section class="demo-section" id="demo">
+        <div class="demo-heading">
+          <div>
+            <p class="kicker">A little look inside</p>
+            <h2>From menu bar to daily reflection.</h2>
+          </div>
+          <p>
+            Press play for a short walkthrough. The video is muted by default and always stays in
+            your control.
+          </p>
+        </div>
+        <div class="video-frame">
+          <video
+            id="demo-video"
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="/public/assets/nemu-reflection.png"
+          >
+            <source src="/public/assets/nemu-demo.mp4" type="video/mp4" />
+            Your browser does not support the video element.
+          </video>
+          <button class="video-prompt" type="button" aria-controls="demo-video">
+            <span class="play-icon" aria-hidden="true">▶</span>
+            <span>play the little tour</span>
+          </button>
+        </div>
+        <p class="video-caption">no account feed · no social layer · no attention tricks</p>
+      </section>
+
+      <section class="privacy-section">
+        <div class="privacy-art" role="img" aria-label="A cozy evening reflection scene"></div>
+        <div class="privacy-copy">
+          <p class="kicker">Private by design</p>
+          <h2>Your activity journal should not become activity surveillance.</h2>
+          <p>
+            Nemu records only the application in front, UTC timing, and idle intervals. Pairing is
+            private, credentials stay in Keychain, and detailed cloud activity expires after 30 days.
+          </p>
+          <ul>
+            <li><span>✓</span> No screenshots or screen recording</li>
+            <li><span>✓</span> No browser history, URLs, or titles</li>
+            <li><span>✓</span> No messages, documents, or input values</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="roadmap" id="next">
+        <div class="roadmap-heading">
+          <p class="kicker">The room gets a little bigger</p>
+          <h2>What comes after v1.</h2>
+          <p>
+            Nemu begins as a focused macOS companion. The next chapter is about understanding a day
+            across more of the places it happens.
+          </p>
+        </div>
+        <div class="roadmap-list">
+          <article>
+            <span>v1</span>
+            <div><h3>macOS foundation</h3><p>Foreground apps, honest idle time, private pairing, and a calm daily dashboard.</p></div>
+            <strong>now</strong>
+          </article>
+          <article>
+            <span>v2</span>
+            <div><h3>Windows & Linux</h3><p>Bring the same privacy boundaries and reflection-first experience to more desktops.</p></div>
+            <strong>next</strong>
+          </article>
+          <article>
+            <span>v2+</span>
+            <div><h3>Browser context</h3><p>Optional extensions to distinguish time on places like YouTube or Wikipedia—without collecting page content.</p></div>
+            <strong>later</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="closing">
+        <img src="/public/assets/leaf.svg" alt="" />
+        <p class="handwritten">another day, remembered softly.</p>
+        <h2>Make a little room<br />to notice your time.</h2>
+        <div>
+          <a class="primary-button" href="#demo">Watch Nemu in action</a>
+          <a class="text-link" href="https://github.com/ansonnchan/nemu" target="_blank" rel="noreferrer">Explore the source ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="#top"><span>nemu</span><img src="/public/assets/leaf.svg" alt="" /></a>
+      <p>made with care for quieter days.</p>
+      <div><span>macOS v1</span><a href="https://github.com/ansonnchan/nemu" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+    </footer>
+  </body>
+</html>
