@@ -8,4 +8,4 @@ The public landing page for [nemu](https://github.com/ansonnchan/nemu), a quiet,
 
 ![Nemu dashboard syncing a recorded day](public/assets/nemu-demo.gif)
 
-[Watch the MP4 demo](public/assets/nemu-demo.mp4)
+
