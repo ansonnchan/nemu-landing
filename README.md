@@ -1,19 +1,11 @@
 # nemu landing
 
-The public landing page for [nemu](https://github.com/ansonnchan/nemu), a quiet, privacy-first activity journal for macOS.
+The public landing page for [nemu](https://github.com/ansonnchan/nemu), a quiet, privacy-first activity tracker for macOS.
 
-## Local preview
+[Open the live dashboard](https://d1z5giweildfo4.cloudfront.net/) — pair it with the macOS agent to view your own activity.
 
-The site is static and has no runtime secrets or environment variables.
+## Demo
 
-```sh
-python3 -m http.server 4173
-```
+![Nemu dashboard syncing a recorded day](public/assets/nemu-demo.gif)
 
-Open <http://localhost:4173>.
-
-## Deploy
-
-Import this repository into Vercel and keep the default static-site settings. No build command or output-directory override is required.
-
-The functional dashboard remains hosted separately on CloudFront because its browser session and API intentionally share one origin.
+[Watch the MP4 demo](public/assets/nemu-demo.mp4)
