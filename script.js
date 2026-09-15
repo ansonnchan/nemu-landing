@@ -13,3 +13,21 @@ if (video && prompt) {
   });
   video.addEventListener('ended', () => prompt.classList.remove('hidden'));
 }
+
+document.querySelectorAll('.copy-button').forEach((button) => {
+  button.addEventListener('click', async () => {
+    const value = button.dataset.copy;
+    if (!value) return;
+
+    try {
+      await navigator.clipboard.writeText(value);
+      const previous = button.textContent;
+      button.textContent = 'copied';
+      window.setTimeout(() => {
+        button.textContent = previous;
+      }, 1400);
+    } catch {
+      button.textContent = 'select';
+    }
+  });
+});
